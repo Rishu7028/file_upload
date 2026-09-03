@@ -1,0 +1,22 @@
+[project]
+name = "file-uploading"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rishu7028", email = "rishu.2201180ec@iiitbh.ac.in" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "flask>=3.1.3",
+]
+
+[project.scripts]
+file-uploading = "file_uploading:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.vercel]
+entrypoint = "src/file_uploading/__init__.py"
