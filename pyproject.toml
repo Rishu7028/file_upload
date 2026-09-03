@@ -19,4 +19,4 @@ requires = ["uv_build>=0.12.5,<0.13.0"]
 build-backend = "uv_build"
 
 [tool.vercel]
-entrypoint = "file_uploading:app"
+entrypoint = "api.index:app"
